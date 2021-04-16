@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="main">
+        <img [src]="blogbyid.image" width="100%" alt="">
+            <p><b>{{blogbyid.title}}</b></p>
+            <p>{{blogbyid.content}}</p>
+    </div>
+    <div class="right">
+        <p>{{blogbyid.Author.author_name}}</p>
+            <img  [src]="blogbyid.Author.image" alt="">
+            <p class="author my-5"><b> Author blogs</b></p>
+    </div>
+    <div class="bottom">
+        <p class="align-self-center"><b> Recent blogs</b></p>
+            <div class="row" >
+                <div class="col" [routerLink]="'/blogs/'+value.id" *ngFor="let value of values | slice:0:3">
+                    <blog-card [data]=value></blog-card>
+                </div>
+            </div>
+    </div>
+</div>
+
+
+<owl-carousel
+[options]="sliderOptions"
+[items]="productModel"
+[carouselClasses]="['owl-theme', 'sliding']">
+<div class="col-md-3 col-sm-12" *ngFor="let prd of productModel">
+    <product-card [data]=prd></product-card>
+</div>
+</owl-carousel>
+
+<owl-carousel
+[options]="sliderOptions"
+[items]="values"
+[carouselClasses]="['owl-theme', 'sliding']">
+<div class="item" *ngFor="let prd of productModel">
+    <product-card [data]=prd></product-card>
+</div>
+</owl-carousel>
