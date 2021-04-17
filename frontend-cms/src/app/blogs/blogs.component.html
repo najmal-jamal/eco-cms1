@@ -1,0 +1,11 @@
+<header></header>
+<div class="row media mt-5">
+    <p class="align-self-center ml-5">BLOGS</p>
+    <div class="col-md-4 col-sm-12 media-body px-5" *ngFor="let value of values">
+        <blog-card [data]=value></blog-card>
+    </div>
+    <!-- <button type="button" class="btn btn-danger mr-5" [routerLink]="'/blogs'">More</button> -->
+</div>
+<footer></footer>
+
+

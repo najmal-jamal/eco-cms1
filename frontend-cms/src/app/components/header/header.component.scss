@@ -1,0 +1,109 @@
+// .header
+// {
+//     height: 50px;
+//     width: 100%;
+//     background-color: #673ab7;  
+//     display: flex;
+//     justify-content: space-around;
+//     align-items: center;
+//     // position: sticky;
+//     // z-index: 100;
+//     // top: 0;
+//     cursor: pointer;
+// }
+
+// .navbar-details
+// {
+//     color: white;
+//     padding-right: 20px;
+//     margin: 10px ;
+//     // float: right;
+//     li{
+//         list-style: none;
+//         display: inline-block;
+//         margin:0 20px;
+//         position: relative;
+//     }
+//      li {
+//         text-decoration: none;
+//         text-transform: uppercase;
+//         color: #fff;
+//     }
+//      li::after{
+//         content: '';
+//         height: 3px;
+//         width: 0;
+//         position: absolute;
+//         background: white;
+//         left: 0;
+//         bottom: -5px;
+//         transition: 0.5s;
+//     }
+//      li:hover::after{
+    
+//         width: 100%;
+//     }
+
+// }
+// b{
+//     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+//     color: white;
+//     font-weight: bolder;
+//     font-size: 30px;
+    
+// }
+
+// p{
+//     line-height: 2;
+// }
+
+.container-fluid{
+    display:flex;
+    justify-content:space-around;
+}
+.searchbar{
+    // margin-bottom: auto;
+    // margin-top: auto;
+    height: 40px;
+    background-color: white;
+    border-radius: 30px;
+    // padding: 10px;
+    }
+
+    .search_input{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height: 20px;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_input{
+    // padding: 0 10px;
+    width: 450px;
+    caret-color:red;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_icon{
+    background: white;
+    color: #e74c3c;
+    }
+
+    .search_icon{
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+    text-decoration:none;
+    }
+    .navbar{
+        background-color: #673ab7; 
+    }

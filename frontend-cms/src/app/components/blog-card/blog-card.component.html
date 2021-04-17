@@ -1,0 +1,19 @@
+<div class="card" *ngIf="data">
+    <div class="row">
+        <div class="col">
+            <img class="profile" [src]=data.Author.image height="50px" width="50px">    
+        </div>
+        <div class="col name my-4">
+            <p><b>{{data.Author.author_name}}</b></p>    
+        </div>
+    </div>
+    <img class="image px-3" [src]="data.image" width="300px" height="300px">
+    <div class="px-3 text-center">
+        <h5 class="title">{{data.title}}</h5>
+        <p class="desc">{{data.content}}</p>
+    </div>
+</div>
+        
+   
+
+    

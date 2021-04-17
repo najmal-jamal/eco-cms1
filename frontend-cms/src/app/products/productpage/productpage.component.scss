@@ -1,0 +1,41 @@
+.product-page
+{
+    display: flex;
+    align-items: center;
+    margin: 40px;
+    background-color: aliceblue;
+    border: 1px solid black;
+    border-radius: 12px;
+}
+
+.bottom-details
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.description
+{
+    padding: 20px;
+    // width:650px;
+}
+
+.src
+{
+    padding:20px;
+    border-radius: 14%;
+    height: 300px;
+    width:250px;
+}
+
+#content
+{
+    line-height: 26px;
+}
+
+.src:active
+{
+    width:700px;
+    height: 700px;
+    
+}

@@ -1,0 +1,19 @@
+<owl-carousel
+        [options]="sliderOptions"
+        [items]="testimonial"
+        [carouselClasses]="['owl-theme', 'sliding']">
+        <div class="item" *ngFor="let t of testimonial">
+            <div class="testimonial">
+                <div class="details">
+                    <img [src]=t.image alt="" class="img">
+                    <div class="writings">
+                        <p class="m-0">{{t.description}}</p>
+                        <div class="bottom-details">
+                            <p class="m-0">{{t.company}}</p>
+                            <p class="m-0">{{t.client_name}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </owl-carousel>

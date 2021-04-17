@@ -1,0 +1,75 @@
+<header></header>
+<slider></slider>
+
+<div class="main">
+    <div class="sect row py-5">
+        <div class="col-md-1 col-sm-12">
+            <p>PRODUCTS</p>
+        </div>
+        <div class="col-md-10 col-sm-12">
+            <owl-carousel
+                [options]="sliderOptions"
+                [items]="productModel"
+                [carouselClasses]="['owl-theme', 'sliding']">
+                <div class="item" [routerLink]="'/products/'+prd.id" *ngFor="let prd of productModel">
+                    <product-card [data]=prd></product-card>
+                </div>
+            </owl-carousel>
+        </div>
+        <div class= "col-md-1 col-sm-12">
+            <button type="button" class="btn btn-danger mr-5" [routerLink]="'/products'">More</button>
+        </div>
+    </div>
+    
+   
+        <div class="sect row py-5 ">
+            <div class="col-md-1 col-sm-12">
+                <p>SERVICES</p>
+            </div>
+            <div class="col-md-10 col-sm-12">
+                <div class="row w-80">
+                <div class="col-md-4 col-sm-12" *ngFor="let ser of serviceModel">
+                    <service-card [data]=ser></service-card>
+                </div>
+                </div>
+            </div>
+            <div class= "col-md-1 col-sm-12">
+                <button type="button" class="btn btn-danger mr-5" [routerLink]="'/service'">More</button>
+            </div>
+        </div>
+
+    
+    
+        <div class="sect row py-5">
+            <div class="col-md-1 col-sm-12">
+                <p>BLOGS</p>
+            </div>
+            <div class="col-md-10 col-sm-12">
+                <div class="row">
+                    <div class="col-md-3 col-sm-12" [routerLink]="'/blogs/'+value.id" *ngFor="let value of values | slice:0:4">
+                        <blog-card [data]=value></blog-card>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1 col-sm-12">
+                <button type="button" class="btn btn-danger mr-5" [routerLink]="'/blogs'">More</button>
+            </div>
+        </div>
+   
+    
+    
+        <div class="sect row py-5">
+            <div class="col-md-1 col-sm-12">
+                <p>TESTIMONIALS</p>
+            </div>
+            <div class="col-md-11">
+               
+                <testimonial-card></testimonial-card>
+               
+            </div>
+        </div>
+    
+
+    <contact-form></contact-form>
+</div>    
+<footer></footer>

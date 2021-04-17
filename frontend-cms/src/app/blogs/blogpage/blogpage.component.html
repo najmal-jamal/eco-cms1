@@ -1,0 +1,28 @@
+<header></header>
+    <div class="">blog
+        <div class="main row mt-5">
+            <div class="col-md-7 col-sm-12">
+                <img [src]="blogbyid.image" width="100%" alt="" class="bimage"><br>
+                <p><b>{{blogbyid.title}}</b></p><br>
+                <p>{{blogbyid.content}}</p>
+            </div>
+            <div class="right col-md-5 col-sm-12">
+                <p>{{blogbyid.Author.author_name}}</p>
+                <img  [src]="blogbyid.Author.image" alt="">
+                <p class="author my-5"><b> Author blogs</b></p>
+            </div>
+        </div>
+        <div class="row">
+            <owl-carousel
+                [options]="sliderOptions"
+                [items]="values"
+                [carouselClasses]="['owl-theme', 'sliding']">
+                <div class="item" *ngFor="let value of values">
+                    <blog-card [data]=value></blog-card>
+                </div>
+            </owl-carousel>
+        </div>
+
+    </div>
+
+<footer></footer>

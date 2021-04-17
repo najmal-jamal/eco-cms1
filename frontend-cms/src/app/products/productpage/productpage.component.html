@@ -1,0 +1,26 @@
+<header></header>
+
+<div class="product-page" *ngIf="productById">
+    <div class="image">
+        <img [src]="productById.image" id="image" class="src">
+    </div>
+
+    <div class="description">
+        <h5>{{productById.name}}</h5>
+        <p id="content">{{productById.description}}</p>
+        <hr>
+        <p><b>Rs. {{productById.price}}</b></p>
+        <div class="bottom-details">
+            <p>{{productById.rating}}</p>
+            <button type="button" class="buyNow btn btn-outline-dark" >Buy Now</button>
+        
+        </div>
+    </div>
+</div>
+
+<div class="row" style="width: 100%;">
+    <h5 style="margin-left: 20px;">Similar Products</h5>
+    <div class="col-sm-12 col-md-3" *ngFor="let p of similarProduct">
+        <product-card [data]="p"></product-card>
+    </div>
+</div>

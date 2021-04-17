@@ -1,0 +1,33 @@
+.card{
+    border: solid;
+    border-radius: 20px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    background-color: #212121; 
+    cursor: pointer;
+    font-family: sans-serif;
+}
+.card:hover{
+    border-color: #7e57c2;
+    box-shadow: 0px 5px 10px 8px #7e57c2;
+}
+.image{
+    object-fit: cover;
+    margin: o auto;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    object-position: center;
+    height: 300px;
+}
+h3 {
+    font-size: 15px;
+    text-align: center;
+    margin: 20px;
+    color: #ede7f6;
+}
+button {
+    text-align: right;
+    border:unset;
+}

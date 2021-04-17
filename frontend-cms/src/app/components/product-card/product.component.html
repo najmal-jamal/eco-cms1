@@ -1,0 +1,17 @@
+<div class="product" *ngIf="data">
+    <h5>{{data.product_name}}</h5>
+
+        <img class ="image" [src]="data.image" alt="" class="src">
+
+        <!-- <p id="description">{{data.description}}</p> -->
+    
+    <p><b>Rs. {{data.price}}</b></p>
+    <button type="button" class="btn buyNow" [routerLink]="'/products/'+data.id">Buy</button>
+    
+    <div class="row">
+        <div class="col-6">
+                <!-- <p id="rating">{{data.rating}} </p>  -->
+        </div>
+    </div>
+</div>
+        

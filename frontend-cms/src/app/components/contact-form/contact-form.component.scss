@@ -1,0 +1,32 @@
+form{
+    max-width: 550px;
+    text-align: center;  
+    margin: 20px auto;
+    font-family: 'Merriweather', sans-serif;
+    width: fit-content;
+}
+
+input, textarea{
+    border: 0px;; 
+    outline: 0px;
+    padding: 1em;
+    display: block;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0 1px rgba($color: #000000, $alpha: .1);
+    resize: none;
+}
+#send{
+    color: white; 
+    background: #f44336;
+    cursor: pointer;
+    width: 100%;
+
+}
+.box{
+    margin: 10px 0px 0px 0px;
+    width: 100%;
+}
+h1{
+    color: white;
+}

@@ -1,0 +1,58 @@
+.product 
+{
+    border-style: solid;
+    border-radius: 20px;
+    /* width: 200px; */
+    height: 350px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin: 15px;
+    background-color: white;
+    min-width: 200px;
+    max-width: 300px;
+}
+p{
+    color: #7e57c2;
+}
+h5{
+    color: #7e57c2;
+}
+.product:hover
+{
+    border-color: #7e57c2;
+    box-shadow: 0px 5px 10px 8px #7e57c2;
+}
+
+.src
+{
+    width: 60%;
+    height: 60%;
+    overflow: hidden;
+    object-fit: cover;
+    // border-radius: 50%;
+    object-position: center;
+    
+}
+
+#rating
+{
+    // top: 8px;
+    bottom: 0;
+    left: 0;
+    position: relative;
+}
+
+button:hover
+{
+    border-color: #7e57c2;
+    box-shadow: 0px 1px 4px 2px black;
+    border-radius: 8px;
+    
+}
+.buyNow{
+    border-radius: 8px;
+    color:white;
+    background-color: #7e57c2;
+    width: 60px;
+}

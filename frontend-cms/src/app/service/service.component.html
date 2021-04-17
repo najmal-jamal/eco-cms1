@@ -1,0 +1,22 @@
+<div class="row" style="width: 100%;">
+    
+    <div class="service">
+            <div class="stitle px-5">
+                <div class="row titles-row" *ngFor="let s of servicemodel">
+                    <a href=service#{{s.id}}><h5>{{s.title}}</h5></a>
+                </div>
+                
+            </div>
+        
+            <div class="content ml-5 mr-5 px-5 py-5">
+                <div class="row content-div"  *ngFor="let s of servicemodel">
+                    <div id ="{{s.id}}">
+                        <h5>{{s.title}}</h5><br>
+                        <img [src]="s.image" alt="" class="src"><br>
+                        <p>{{s.description}}</p><br>
+                        <hr><br>
+                    </div>
+                </div>
+            </div>      
+    </div>
+</div>
