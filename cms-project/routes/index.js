@@ -48,12 +48,14 @@ router.post('/categories', productController.postCategories);
 router.put('/categories', productController.putCategories);
 router.delete('/categories/:id', productController.deleteCategories);
 
+
 // // ********* PRODUCT **********
 router.get('/products', productController.getProducts);
 router.get('/products/:id', productController.getProductsbyid);
 router.post('/products', productController.postProducts);
 router.put('/products', productController.putProducts);
 router.delete('/products/:id', productController.deleteProducts);
+router.get('/category_product/:id',productController.getCategoryIdProduct);
 
 // // ********* SERVICE **********
 router.get('/services', serviceController.getServices);

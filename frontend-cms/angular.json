@@ -36,7 +36,10 @@
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/owl.carousel/dist/owl.carousel.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/your-path-to-fontawesome/js/brands.js",
+              "node_modules/your-path-to-fontawesome/js/solid.js",
+              "node_modules/your-path-to-fontawesome/js/fontawesome.js"
             ]
           },
           "configurations": {

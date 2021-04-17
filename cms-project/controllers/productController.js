@@ -156,3 +156,15 @@ exports.deleteCategories = (req, res, next) => {
         res.status(400).send(err);
     })
 }
+
+exports.getCategoryIdProduct = (req, res, next) => {
+    mproduct.findAll({where:{
+        category_id:req.params.id
+    },
+        include : mcategory.Categories
+    }).then(data => {
+        res.send(data);
+    }).catch(err => {
+        res.status(400).send(err);
+    })
+}
